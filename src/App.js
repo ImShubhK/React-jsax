@@ -26,11 +26,15 @@ const imageData = ()=>{
 function App() {
  let d=imageData()
  return(
-  d.map(e => {
+  <div>
+  <h1>Kalvium Gallary</h1>
+  
+  {d.map(e => {
     return(  
       <img className='elephant' src={e.img} alt="" />
     )
-  })
+  })}
+  </div>
  )
 }
 
